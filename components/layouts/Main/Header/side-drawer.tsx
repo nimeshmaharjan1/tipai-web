@@ -41,8 +41,8 @@ const SideBar: React.FC<Props> = ({ children }) => {
                         </label>
                     </div>
                     <div className="md:container">
-                        <div className="flex-1 px-2 mx-2 font-bold text-lg md:text-3xl md:mx-0 md:px-0 flex items-center gap-2">
-                            <SlNotebook></SlNotebook>
+                        <div className="flex-1 font-bold text-lg md:text-3xl md:mx-0 md:px-0 flex items-center gap-2 text-primary uppercase">
+                            <SlNotebook className="hidden md:flex"></SlNotebook>
                             Tipai
                         </div>
                         <div className="flex-none hidden lg:flex items-center gap-4">
