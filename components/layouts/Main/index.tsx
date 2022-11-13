@@ -2,6 +2,8 @@ import ThemeToggler from '@components/ui/theme-toggler';
 import Head from 'next/head';
 import React from 'react';
 
+import Sidebar from './Header/side-drawer';
+
 interface Props {
     children: React.ReactNode;
 }
@@ -15,9 +17,8 @@ const MainLayout: React.FC<Props> = ({ children }) => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <header>
-                <ThemeToggler></ThemeToggler>
+                <Sidebar>{children}</Sidebar>
             </header>
-            <main className="container">{children}</main>
         </>
     );
 };
